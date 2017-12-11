@@ -12,7 +12,12 @@ function draw() {
   ctx.closePath();
   ctx.clip();
 
-  ctx.fillStyle = '#008891';
+  ctx.fillStyle = '#F3C9BF';
+  for (var i = 0; i < 100; i++) {
+    ctx.fillRect(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() * 57, Math.random() * 53);
+  }
+
+  ctx.fillStyle = '#73B1D6';
   for (var i = 0; i < 100; i++) {
     ctx.fillRect(Math.random() * canvas.width, Math.random() * canvas.height, Math.random() * 57, Math.random() * 53);
   }
