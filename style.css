@@ -20,11 +20,10 @@ body {
 
 nav {
   position: fixed;
-  position: fixed;
   display: grid;
   top: 41vh;
   left: 1vw;
-  cursor: pointer;
+  z-index: 7;
 }
 
 nav > a {
@@ -34,11 +33,12 @@ nav > a {
   margin-top: 1.3vh;
   cursor: pointer;
   font-family: 'Lato', sans-serif;
-
+  font-size: 2vh;
+  transition: all 0.3s ease-in-out;
 }
 
 nav > a:hover {
-  cursor: pointer;
+  font-size: 2.3vh;
 }
 
 /*header*/
@@ -76,14 +76,17 @@ main {
   position: relative;
 }
 
-
 .boxes {
   width: 100%;
   height: 100vh;
+  padding-top: 7vh;
 }
 
-.boxes > h3 {
+.love {
+  width: 100%
+  display: inline-block;
   font-family: 'elfa_brushregular';
   font-size: 4.5vh;
   text-align: center;
+  margin-top: 27vh;
 }
